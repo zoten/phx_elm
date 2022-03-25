@@ -1,0 +1,17 @@
+{
+  "main": "js/app.js",
+  "scripts": {
+    "build": "node ./build.js",
+    "watch": "node ./build.js --watch"
+  },
+  "devDependencies": {
+    "esbuild": "^0.14.27",
+    "esbuild-plugin-elm": "^0.0.8"
+  },
+  "dependencies": {
+    "elm": "*",
+    "phoenix": "file:../deps/phoenix",
+    "phoenix_html": "file:../deps/phoenix_html",
+    "phoenix_live_view": "file:../deps/phoenix_live_view"
+  }
+}

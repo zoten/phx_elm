@@ -1,0 +1,20 @@
+# Docker compose for development
+
+version: "3.7"
+
+services:
+  postgres0:
+    image: postgres:14
+    networks:
+      - db
+    ports:
+      - 5432:5432
+    volumes:
+      - ${PWD}/data/dbs/pg_data0:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_HOST_AUTH_METHOD=trust
+      - PGDATA=/var/lib/postgresql/data/pgdata
+
+networks:
+  db:
+    driver: bridge
