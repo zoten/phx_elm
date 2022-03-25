@@ -11,12 +11,12 @@ main =
 
 
 type alias Model =
-    Int
+    { x : Int }
 
 
 init : Model
 init =
-    0
+    { x = 0 }
 
 
 type Msg
@@ -28,16 +28,16 @@ update : Msg -> Model -> Model
 update msg model =
     case msg of
         Increment ->
-            model + 1
+            { model | x = model.x + 1 }
 
         Decrement ->
-            model - 1
+            { model | x = model.x - 1 }
 
 
 view : Model -> Html Msg
 view model =
     div []
         [ button [ onClick Decrement ] [ text "-" ]
-        , div [] [ text (String.fromInt model) ]
+        , div [] [ text (String.fromInt model.x) ]
         , button [ onClick Increment ] [ text "+" ]
         ]
