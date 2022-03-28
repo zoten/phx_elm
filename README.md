@@ -12,6 +12,8 @@ Ready to run in production? Please [check our deployment guides](https://hexdocs
 
 ## Changes until now
 
+[See also](https://hexdocs.pm/phoenix/asset_management.html#content)
+
  - 
     ``` bash
     cd assets
