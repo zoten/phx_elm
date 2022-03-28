@@ -44,3 +44,5 @@ Ready to run in production? Please [check our deployment guides](https://hexdocs
       node: ["build.js", "--watch", cd: Path.expand("../assets", __DIR__)]
     ]
    ```
+  
+  - tailwind support, see [commit](https://github.com/zoten/phx_elm/commit/fdead626b4b921943c8c14657e275a112eb77c21)
