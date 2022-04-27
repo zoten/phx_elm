@@ -18,6 +18,8 @@ Ready to run in production? Please [check our deployment guides](https://hexdocs
     ``` bash
     cd assets
     npm install esbuild --save-dev
+    npm install esbuild-plugin-elm --save-dev
+
     npm install ../deps/phoenix ../deps/phoenix_html ../deps/phoenix_live_view --save
     ```
 
